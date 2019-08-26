@@ -51,15 +51,12 @@ public class Main {
             System.out.println("Размер: " + size + "байт");
         }
         else if(size < biteInMbite){
-            System.out.printf("Размер: %.3f килобайт", (double)size/biteInKbite);
-            System.out.println("");
+            System.out.printf("Размер: %.3f килобайт%n", (double)size/biteInKbite);
         }
         else if(size < biteInGbite){
-            System.out.printf("Размер: %.3f мегабайт", (double)size/biteInMbite);
-            System.out.println("");
+            System.out.printf("Размер: %.3f мегабайт%n", (double)size/biteInMbite);
         }else{
-            System.out.printf("Размер: %.3f гигабайт", (double)size/biteInGbite);
-            System.out.println("");
+            System.out.printf("Размер: %.3f гигабайт%n", (double)size/biteInGbite);
         }
     }
 }
