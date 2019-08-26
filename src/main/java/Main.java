@@ -24,7 +24,7 @@ public class Main {
         }
     }
 
-    public static long getDirSize(File dir) {
+    private static long getDirSize(File dir) {
         long size = 0;
         if (dir.isFile()) {
             size = dir.length();
@@ -41,7 +41,7 @@ public class Main {
         return size;
     }
 
-    public static void printSize(Long size)
+    private static void printSize(Long size)
     {
         long biteInKbite = 1024;
         long biteInMbite = 1048576;
